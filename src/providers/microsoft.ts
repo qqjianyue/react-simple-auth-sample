@@ -29,7 +29,7 @@ export const microsoftProvider: IProvider<Session> = {
     buildAuthorizeUrl() {
         return `https://login.microsoftonline.com/common/oauth2/v2.0/authorize?response_type=id_token+token
         &scope=https%3A%2F%2Fgraph.microsoft.com%2Fuser.read%20openid%20profile
-        &client_id=606b0d7c-9062-474c-a5b0-cb9a61baf566
+        &client_id=672816e2-2420-4a58-bf22-97f7f9179a77
         &redirect_uri=${encodeURIComponent(`${window.location.origin}/redirect.html`)}
         &state=${guid()}
         &nonce=${guid()}
@@ -37,7 +37,7 @@ export const microsoftProvider: IProvider<Session> = {
         &x-client-SKU=MSAL-JS-SUCKS
         &x-client-Ver=1.0.0
         &client-request-id=${guid()}
-        &login_hint=mattmazzola%40live.com
+        &login_hint=jensenjyli235%40gmail.com
         &domain_req=${guid()}
         &login_req=${guid()}
         &domain_hint=consumers

@@ -18,13 +18,21 @@ class Component extends React.Component<Props, {}> {
             throw error
         }
     }
+    
+    componentDidMount() {
+	    setTimeout(() => {
+    		let ele: HTMLElement = this.refs.mybutton as HTMLElement;
+    		//const ele = this.refs.mybutton;
+    		ele.click();
+    	}, 3000);
+	}
 
     render() {
         return (
             <div className="login">
                 <div className="login-providers">
                     <h4>Login:</h4>
-                    <button type="button" className="login-button" onClick={() => this.onClickLogin()}>
+                    <button ref="mybutton" type="button" className="login-button" onClick={() => this.onClickLogin()}>
                         <img src="/images/sign-in-with-microsoft-light.png" alt="Login with Microsoft" />
                     </button>
                 </div>

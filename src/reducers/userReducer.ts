@@ -3,7 +3,7 @@ import { UserState } from '../types'
 import { AT } from '../types/ActionTypes'
 import { Reducer } from 'redux'
 import { microsoftProvider } from '../providers/microsoft'
-import RSA from 'react-simple-auth'
+import RSA from '../providers/react-simple-auth'
 
 const unauthenticatedState: UserState = {
     isLoggedIn: false,

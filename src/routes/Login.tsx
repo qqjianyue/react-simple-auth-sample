@@ -5,7 +5,7 @@ import { connect } from 'react-redux'
 import { login } from '../actions'
 import { State } from '../types'
 import { microsoftProvider } from '../providers/microsoft'
-import RSA from 'react-simple-auth'
+import RSA from '../providers/react-simple-auth'
 import './Login.css'
 
 class Component extends React.Component<Props, {}> {

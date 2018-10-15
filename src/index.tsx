@@ -11,7 +11,6 @@ import { createLogger } from 'redux-logger'
 
 const loggerMiddleware = createLogger()
 
-
 export const createReduxStore = () => createStore(
   rootReducer,
   applyMiddleware(

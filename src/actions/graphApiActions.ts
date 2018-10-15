@@ -1,6 +1,6 @@
 import { Dispatch } from 'redux'
 import { microsoftProvider } from '../providers/microsoft'
-import RSA from 'react-simple-auth'
+import RSA from '../providers/react-simple-auth'
 import { ActionObject } from '../types'
 import { AT } from '../types/ActionTypes'
 
